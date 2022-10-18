@@ -1,2 +1,3 @@
 # Odin-projectRockPaperScissors
-Develop a web page play rock paper scissors game
+Develop a web page play rock paper scissors game using JS.
+

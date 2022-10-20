@@ -1,20 +1,42 @@
-const playerText=document.querySelector('#playerText');
+
+const playerText=document.querySelector("#playerText")
 const computerText=document.querySelector("#computerText");
 const resultText=document.querySelector("#resultText");
 const choiceBtns=document.querySelectorAll(".chioceBtn");
+const playerpoint=document.querySelector("#playerpoint");
+const computerpoint=document.querySelector("#computerpoint");
 
+console.log(playerText);
+console.log(computerText);
+console.log(resultText);
+console.log(choiceBtns);
+console.log(playerpoint);
+console.log(computerpoint);
 let computer1;
 let player1;
-console.log("1Yes");
-/*choiceBtns.forEach(button =>button.addEventListener("click",() => {
-    console.log("Yes");
+let computerp=0;
+let playerp=0;
+choiceBtns.forEach(button =>button.addEventListener("click",() => {
+    
     player1=button.textContent;
     computer1=getComputerChoice();
     playerText.textContent=`Player:${player1}`;
     computerText.textContent=`Computer:${computer1}`;
     resultText.textContent=game(player1,computer1);
+    playerpoint.textContent=`Player:${playerp}`;
+    computerpoint.textContent=`Computer:${computerp}`;
+    if(playerp==5){
+        alert("You Win!");
+        computerp=0;
+        playerp=0;
+    }
+    else if(computerp==5){
+        alert("You lose!");
+        computerp=0;
+        playerp=0;
+    }
 
-}));*/
+}));
 // randomly return either ‘Rock’, ‘Paper’ or ‘Scissors’.
 function getComputerChoice(){
     let x= (Math.floor(Math.random()*3));
@@ -35,14 +57,38 @@ function game(player, computer){
         return "Tie! Try one more"
     }
     else if(computer=="Rock"){
-        return (player=="Paper") ? "You win, computer lose!" : "You lose, computer win!"
+        if(player=="Paper"){
+            playerp++;
+            return "You win, computer lose!"
+        } 
+        else{
+            computerp++
+            "You lose, computer win!"
+        } 
     }
-    else if(computer=="paper"){
-        return (player=="Scissors") ? "You win, computer lose!" : "You lose, computer win!"
+    else if(computer=="Paper"){
+        if(player=="Scissors"){
+            playerp++;
+            return "You win, computer lose!"
+        } 
+        else{
+            computerp++
+            "You lose, computer win!"
+        } 
     }
     else if(computer=="Scissors"){
-        return (player=="Rock") ? "You win, computer lose!" : "You lose, computer win!"
+        if(player=="Rock"){
+            playerp++;
+            return "You win, computer lose!"
+        } 
+        else{
+            computerp++
+            "You lose, computer win!"
+        } 
     }
+    
+        
+    
 }
-console.log(playerText);
+
 

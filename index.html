@@ -2,22 +2,39 @@
 <html lang="en">
 <head>
     <title>Let's play...</title>
-    
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Paper Rock Scissors</h1>
-    <p>Your choice here</p>
-    <button class="chioceBtn">Rock</button>
-    <button class="chioceBtn">Paper</button>
-    <button class="chioceBtn">Scissors</button>
-
-    <h2 class="gameinfo" id="playerText">Player:</h2>
-    <h2 class="gameinfo" id="computerText">Computer:</h2>
-    <h2 class="gameinfo" id="resultText">Result:</h2>
-    
-    <h2 class="resultinfo" id="t1">See your point!</h2>
-    <h2 class="resultinfo" id="playerpoint">Player:</h2>
-    <h2 class="resultinfo" id="computerpoint">Computer:</h2>
+    <div class="tcontainer">
+        <h1 class="maintitle">Paper Rock Scissors</h1>
+    </div>
+    <div class="choicecontainer">
+        <p class="prompt">Your choice here</p>
+        <div class="btns">
+            <button class="chioceBtn">Rock</button>
+            <button class="chioceBtn">Paper</button>
+            <button class="chioceBtn">Scissors</button>
+        </div>
+    </div>
+    <div class="gameinfo">
+        <div class="choiceInfo">
+            <h2 id="playerText">Player:</h2>
+            <h2 id="computerText">Computer:</h2>
+        </div>
+        <div class="resultcontainer">
+            <h2 id="resultText">Result:</h2>
+        </div>
+    </div>
+    <div class="resultinfo">
+        <div class="prompt1">
+            <h2 id="t1">See your point! First to 5 points WIN!</h2>
+        </div>
+        <div class="pointinfo">
+            <h2 id="playerpoint">Player:</h2>
+            <h2 id="computerpoint">Computer:</h2>
+        </div>
+    </div>
     <script src="./paperRS.js"></script>
 </body>
 

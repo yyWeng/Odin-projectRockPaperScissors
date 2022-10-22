@@ -1,0 +1,71 @@
+*{
+    color: black;
+}
+.tcontainer{
+    display: flex;
+    margin:auto;  
+    
+}
+
+.maintitle{
+    width: fit-content;
+    border-style: dotted;
+    border-color:royalblue;
+    border-radius: 30%;
+    border-width: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin:auto;  
+    justify-content: center;
+}
+.choicecontainer{
+    border-style: dotted;
+    border-color:royalblue;
+    border-radius: 30%;
+    border-width: 20px;
+    background-color: aqua;
+}
+.prompt{
+    background-color: bisque;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.btns{
+    display: flex;
+    justify-content:space-around;
+}
+.gameinfo{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+}
+.choiceInfo{
+    display: flex;
+    justify-content: space-around;
+    background-color: beige;
+}
+.resultcontainer{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.resultinfo{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(43, 41, 39);
+}
+.prompt1{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+
+}
+.pointinfo{
+    display: flex;
+    justify-content: space-around;
+    background-color: chocolate;
+}
+
+   
+

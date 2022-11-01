@@ -1,70 +1,89 @@
 *{
     color: black;
+    background-color:rgb(210, 181, 218);
 }
 .tcontainer{
     display: flex;
     margin:auto;  
-    
 }
 
 .maintitle{
-    width: fit-content;
-    border-style: dotted;
-    border-color:royalblue;
-    border-radius: 30%;
-    border-width: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-size:60px;
+    font: weight 300px;
+    color: rgb(80, 46, 90);
     margin:auto;  
     justify-content: center;
 }
 .choicecontainer{
-    border-style: dotted;
-    border-color:royalblue;
-    border-radius: 30%;
-    border-width: 20px;
-    background-color: aqua;
+    width:900px;
+    margin: auto;
+
 }
 .prompt{
-    background-color: bisque;
+    font-size:40px;
+    font: weight 200px;
     margin: auto;
+    margin-bottom: 80px;
     display: flex;
     justify-content: center;
+
 }
 .btns{
+    width:900px;
     display: flex;
     justify-content:space-around;
+    margin-bottom: 50px;
 }
+.chioceBtn{
+    background-color: #c05992;
+    border: none;
+    color: white;
+    font-weight: 200;
+    padding: 16px 32px;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+.chioceBtn:hover {opacity: 1}
 .gameinfo{
-    background-color: aqua;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .choiceInfo{
+    border: 10cm;
+    width: 600px;
+    border: 10px solid rgb(98, 34, 100);
     display: flex;
     justify-content: space-around;
-    background-color: beige;
+    margin: auto;
+ 
 }
 .resultcontainer{
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
+    
 }
 .resultinfo{
     display: flex;
     flex-direction: column;
-    background-color: rgb(43, 41, 39);
+ 
 }
 .prompt1{
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
+  
 
 }
 .pointinfo{
+    border: 10cm;
+    width: 500px;
+    border: 10px solid rgb(98, 34, 100);
+    border-radius: 10%;
     display: flex;
     justify-content: space-around;
-    background-color: chocolate;
+    margin: auto;
 }
 
    

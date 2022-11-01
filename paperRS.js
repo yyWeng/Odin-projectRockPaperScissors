@@ -20,11 +20,11 @@ choiceBtns.forEach(button =>button.addEventListener("click",() => {
     
     player1=button.textContent;
     computer1=getComputerChoice();
-    playerText.textContent=`Player:${player1}`;
-    computerText.textContent=`Computer:${computer1}`;
+    playerText.textContent=`Player: ${player1}`;
+    computerText.textContent=`Computer: ${computer1}`;
     resultText.textContent=game(player1,computer1);
-    playerpoint.textContent=`Player:${playerp}`;
-    computerpoint.textContent=`Computer:${computerp}`;
+    playerpoint.textContent=`Player: ${playerp}`;
+    computerpoint.textContent=`Computer: ${computerp}`;
     if(playerp==5){
         alert("You Win!");
         computerp=0;
@@ -70,6 +70,7 @@ function game(player, computer){
         if(player=="Scissors"){
             playerp++;
             return "You win, computer lose!"
+            
         } 
         else{
             computerp++
